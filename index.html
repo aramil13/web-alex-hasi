@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GroupSailTrips — La Aventura de tu Vida en Velero</title>
+  <meta name="description" content="Viajes en velero en grupo por el Mediterráneo. Croacia, Grecia, Cerdeña. Pequeños grupos, experiencias auténticas, capitán experto." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========== NAVBAR =========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo-link">
+        <span class="logo-icon">⛵</span>
+        <span class="logo-text">Group<strong>Sail</strong>Trips</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#trips" class="nav-link">Viajes</a></li>
+        <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
+        <li><a href="#calendar" class="nav-link">Calendario</a></li>
+        <li><a href="#reviews" class="nav-link">Opiniones</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-cta">Contactar</a></li>
+      </ul>
+      <button class="burger-btn" id="burger-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =========== HERO =========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero_sailing.png" alt="Velero en el Mediterráneo" class="hero-img" id="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🌊 Temporada 2026 abierta</div>
+      <h1 class="hero-title">
+        Prepárate para<br/>
+        <span class="hero-title-accent">La Aventura de tu Vida</span>
+      </h1>
+      <p class="hero-subtitle">Viajes en velero en grupo por el Mediterráneo. Croacia, Grecia, Cerdeña. Grupos pequeños, capitán experto, sin experiencia necesaria.</p>
+      <div class="hero-actions">
+        <a href="#trips" class="btn btn-primary" id="hero-cta-trips">Ver Viajes</a>
+        <a href="#about" class="btn btn-ghost" id="hero-cta-about">¿Cómo funciona?</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Aventureros</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Destinos</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-number">4.9★</span>
+          <span class="stat-label">Valoración</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- =========== WHY US =========== -->
+  <section class="why-us" id="about">
+    <div class="container">
+      <div class="section-label">¿Por qué elegirnos?</div>
+      <h2 class="section-title">Por qué viajar con <span class="highlight">GroupSailTrips</span></h2>
+      <div class="features-grid">
+        <div class="feature-card" id="feature-small-groups">
+          <div class="feature-icon">👥</div>
+          <div class="feature-number">01</div>
+          <h3 class="feature-title">Grupos Pequeños</h3>
+          <p class="feature-desc">De 6 a 12 personas a bordo. Suficiente para crear un ambiente increíble, pero lo bastante pequeño para conocer a todo el mundo.</p>
+        </div>
+        <div class="feature-card" id="feature-organized">
+          <div class="feature-icon">🗺️</div>
+          <div class="feature-number">02</div>
+          <h3 class="feature-title">Todo Organizado</h3>
+          <p class="feature-desc">Barco, ruta, seguridad, logística. Nosotros nos encargamos de los detalles para que tú solo disfrutes de la semana.</p>
+        </div>
+        <div class="feature-card" id="feature-beginner">
+          <div class="feature-icon">🔰</div>
+          <div class="feature-number">03</div>
+          <h3 class="feature-title">Apto para Principiantes</h3>
+          <p class="feature-desc">No necesitas experiencia en navegación. Aprende tanto (o tan poco) como quieras. Estás en buenas manos.</p>
+        </div>
+        <div class="feature-card" id="feature-authentic">
+          <div class="feature-icon">⚓</div>
+          <div class="feature-number">04</div>
+          <h3 class="feature-title">Experiencia Auténtica</h3>
+          <p class="feature-desc">No es un crucero de masas. Es un velero real con una tripulación pequeña y rutas escogidas a mano para ti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== TRIPS =========== -->
+  <section class="trips-section" id="trips">
+    <div class="container">
+      <div class="section-label">Próximos Viajes</div>
+      <h2 class="section-title">Explora nuestros <span class="highlight">Destinos</span></h2>
+      <div class="trips-grid">
+
+        <div class="trip-card" id="trip-croatia-split">
+          <div class="trip-card-img-wrap">
+            <img src="images/croatia_sailing.png" alt="Croacia Split" class="trip-card-img" />
+            <div class="trip-badge">🔥 Popular</div>
+            <div class="trip-overlay">
+              <a href="#contact" class="btn btn-primary btn-sm">Reservar</a>
+            </div>
+          </div>
+          <div class="trip-card-body">
+            <div class="trip-meta">
+              <span class="trip-location">📍 Split, Croacia</span>
+              <span class="trip-date">Sep 5–12</span>
+            </div>
+            <h3 class="trip-title">Split Happens — Croacia</h3>
+            <p class="trip-desc">Navega por las cristalinas aguas del Adriático descubriendo las islas más espectaculares de Dalmacia.</p>
+            <div class="trip-footer">
+              <span class="trip-price">desde <strong>1.900€</strong></span>
+              <div class="trip-spots">
+                <span class="spots-dot"></span>
+                <span class="spots-dot"></span>
+                <span class="spots-dot empty"></span>
+                <span class="spots-dot empty"></span>
+                <span class="spots-text">2 plazas libres</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trip-card" id="trip-greece-athens">
+          <div class="trip-card-img-wrap">
+            <img src="images/greece_sailing.png" alt="Grecia Atenas" class="trip-card-img" />
+            <div class="trip-badge badge-new">⚡ Nuevo</div>
+            <div class="trip-overlay">
+              <a href="#contact" class="btn btn-primary btn-sm">Reservar</a>
+            </div>
+          </div>
+          <div class="trip-card-body">
+            <div class="trip-meta">
+              <span class="trip-location">📍 Atenas, Grecia</span>
+              <span class="trip-date">Ago 1–8</span>
+            </div>
+            <h3 class="trip-title">Grecia con el Grupo</h3>
+            <p class="trip-desc">Islas Griegas, historia milenaria, aguas de ensueño. El viaje perfecto para escapar de la rutina.</p>
+            <div class="trip-footer">
+              <span class="trip-price">desde <strong>2.800€</strong></span>
+              <div class="trip-spots">
+                <span class="spots-dot"></span>
+                <span class="spots-dot empty"></span>
+                <span class="spots-dot empty"></span>
+                <span class="spots-dot empty"></span>
+                <span class="spots-text">4 plazas libres</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trip-card" id="trip-sardinia">
+          <div class="trip-card-img-wrap">
+            <img src="images/sardinia_sailing.png" alt="Cerdeña Italia" class="trip-card-img" />
+            <div class="trip-overlay">
+              <a href="#contact" class="btn btn-primary btn-sm">Reservar</a>
+            </div>
+          </div>
+          <div class="trip-card-body">
+            <div class="trip-meta">
+              <span class="trip-location">📍 Cerdeña, Italia</span>
+              <span class="trip-date">Jun 27–Jul 4</span>
+            </div>
+            <h3 class="trip-title">Cerdeña Salvaje</h3>
+            <p class="trip-desc">Aguas esmeraldas, calas secretas, vinos locales y puestas de sol que nunca olvidarás.</p>
+            <div class="trip-footer">
+              <span class="trip-price">desde <strong>2.800€</strong></span>
+              <div class="trip-spots">
+                <span class="spots-dot"></span>
+                <span class="spots-dot"></span>
+                <span class="spots-dot"></span>
+                <span class="spots-dot empty"></span>
+                <span class="spots-text">1 plaza libre</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="trips-cta">
+        <a href="#calendar" class="btn btn-outline" id="view-all-trips">Ver todos los viajes →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== GALLERY STRIP =========== -->
+  <div class="gallery-strip">
+    <img src="images/group_sailboat.png" alt="Grupo en velero" />
+    <img src="images/hero_sailing.png" alt="Velero mediterráneo" />
+    <img src="images/greece_sailing.png" alt="Grecia" />
+    <img src="images/croatia_sailing.png" alt="Croacia" />
+    <img src="images/sardinia_sailing.png" alt="Cerdeña" />
+  </div>
+
+  <!-- =========== CALENDAR =========== -->
+  <section class="calendar-section" id="calendar">
+    <div class="container">
+      <div class="section-label">Planifica tu aventura</div>
+      <h2 class="section-title">Calendario de <span class="highlight">Viajes 2026</span></h2>
+      <div class="calendar-grid">
+        <div class="cal-month" id="cal-may">
+          <div class="cal-month-header">
+            <span class="cal-month-name">Mayo</span>
+            <span class="cal-month-count">2 viajes</span>
+          </div>
+          <div class="cal-trips">
+            <a href="#contact" class="cal-trip" id="cal-trip-1">
+              <span class="cal-dot" style="background:#06b6d4"></span>
+              <div><strong>Martinica con Quinn</strong><span>9 May – 16 May</span></div>
+              <span class="cal-arrow">→</span>
+            </a>
+            <a href="#contact" class="cal-trip" id="cal-trip-2">
+              <span class="cal-dot" style="background:#8b5cf6"></span>
+              <div><strong>Martinica con Taylor</strong><span>16 May – 23 May</span></div>
+              <span class="cal-arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="cal-month" id="cal-june">
+          <div class="cal-month-header">
+            <span class="cal-month-name">Junio</span>
+            <span class="cal-month-count">3 viajes</span>
+          </div>
+          <div class="cal-trips">
+            <a href="#contact" class="cal-trip" id="cal-trip-3">
+              <span class="cal-dot" style="background:#f59e0b"></span>
+              <div><strong>Atenas con Josée</strong><span>30 May – 6 Jun</span></div>
+              <span class="cal-arrow">→</span>
+            </a>
+            <a href="#contact" class="cal-trip" id="cal-trip-4">
+              <span class="cal-dot" style="background:#10b981"></span>
+              <div><strong>Atenas con Sierra y Chloe</strong><span>6 Jun – 13 Jun</span></div>
+              <span class="cal-arrow">→</span>
+            </a>
+            <a href="#contact" class="cal-trip" id="cal-trip-5">
+              <span class="cal-dot" style="background:#ef4444"></span>
+              <div><strong>Lefkas con Sierra y Chloe</strong><span>13 Jun – 23 Jun</span></div>
+              <span class="cal-arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="cal-month" id="cal-july">
+          <div class="cal-month-header">
+            <span class="cal-month-name">Julio</span>
+            <span class="cal-month-count">1 viaje</span>
+          </div>
+          <div class="cal-trips">
+            <a href="#contact" class="cal-trip" id="cal-trip-6">
+              <span class="cal-dot" style="background:#f97316"></span>
+              <div><strong>Cerdeña con Ava</strong><span>27 Jun – 4 Jul</span></div>
+              <span class="cal-arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="cal-month" id="cal-august">
+          <div class="cal-month-header">
+            <span class="cal-month-name">Agosto</span>
+            <span class="cal-month-count">3 viajes</span>
+          </div>
+          <div class="cal-trips">
+            <a href="#contact" class="cal-trip" id="cal-trip-7">
+              <span class="cal-dot" style="background:#06b6d4"></span>
+              <div><strong>Atenas con Destiny</strong><span>1 Ago – 8 Ago</span></div>
+              <span class="cal-arrow">→</span>
+            </a>
+            <a href="#contact" class="cal-trip" id="cal-trip-8">
+              <span class="cal-dot" style="background:#8b5cf6"></span>
+              <div><strong>La Escapada Egea</strong><span>8 Ago – 15 Ago</span></div>
+              <span class="cal-arrow">→</span>
+            </a>
+            <a href="#contact" class="cal-trip" id="cal-trip-9">
+              <span class="cal-dot" style="background:#10b981"></span>
+              <div><strong>Grecia con Catarina</strong><span>15 Ago – 22 Ago</span></div>
+              <span class="cal-arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="cal-month" id="cal-september">
+          <div class="cal-month-header">
+            <span class="cal-month-name">Septiembre</span>
+            <span class="cal-month-count">2 viajes</span>
+          </div>
+          <div class="cal-trips">
+            <a href="#contact" class="cal-trip" id="cal-trip-10">
+              <span class="cal-dot" style="background:#f59e0b"></span>
+              <div><strong>Split Happens I</strong><span>5 Sep – 12 Sep</span></div>
+              <span class="cal-arrow">→</span>
+            </a>
+            <a href="#contact" class="cal-trip" id="cal-trip-11">
+              <span class="cal-dot" style="background:#ef4444"></span>
+              <div><strong>Split con Taylor</strong><span>26 Sep – 3 Oct</span></div>
+              <span class="cal-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== ABOUT CAPTAIN =========== -->
+  <section class="captain-section" id="captain">
+    <div class="container">
+      <div class="captain-grid">
+        <div class="captain-img-wrap">
+          <img src="images/captain_photo.png" alt="Capitán de GroupSailTrips" class="captain-img" id="captain-img" />
+          <div class="captain-img-decoration"></div>
+        </div>
+        <div class="captain-content">
+          <div class="section-label">Tu Capitán</div>
+          <h2 class="section-title">Hola, soy <span class="highlight">Alex</span></h2>
+          <p class="captain-bio">Soy un patrón con años de experiencia recorriendo el Mediterráneo. Organizo estos viajes para que más personas puedan experimentar lo que realmente significa navegar, no en un crucero de lujo, sino en un velero real con una pequeña tripulación.</p>
+          <p class="captain-bio">Cada viaje está <strong>dirigido profesionalmente</strong> y diseñado con <strong>máxima seguridad</strong>. No necesitas experiencia previa. Solo necesitas ganas de aventura y disposición para compartir barco con personas que probablemente no seguirán siendo extraños por mucho tiempo.</p>
+          <div class="captain-badges">
+            <span class="badge">⚓ Patrón certificado</span>
+            <span class="badge">🌍 +50 viajes completados</span>
+            <span class="badge">🛡️ Seguridad 100%</span>
+          </div>
+          <a href="https://instagram.com" target="_blank" class="btn btn-social" id="captain-instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Seguir en Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== REVIEWS =========== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-label">Lo dicen los viajeros</div>
+      <h2 class="section-title">Opiniones <span class="highlight">Reales</span></h2>
+      <div class="reviews-stars-bar">
+        <span class="reviews-stars">★★★★★</span>
+        <span class="reviews-avg">4.9 / 5 — Excelente</span>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card" id="review-1">
+          <div class="review-header">
+            <div class="review-avatar" style="background: linear-gradient(135deg,#06b6d4,#6366f1)">SK</div>
+            <div>
+              <div class="review-name">Sarah K.</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <div class="review-trip-tag">Croacia</div>
+          </div>
+          <p class="review-text">"No recomendaría GroupSailTrips lo suficiente. El barco era precioso y el capitán hizo que cada uno se sintiera seguro e incluido desde el primer momento. Una experiencia absolutamente increíble."</p>
+        </div>
+        <div class="review-card" id="review-2">
+          <div class="review-header">
+            <div class="review-avatar" style="background: linear-gradient(135deg,#f59e0b,#ef4444)">JM</div>
+            <div>
+              <div class="review-name">Jake M.</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <div class="review-trip-tag">Grecia</div>
+          </div>
+          <p class="review-text">"Navegar 8 días con 13 desconocidos fue una de las experiencias más especiales de mi vida. Me empujó fuera de mi zona de confort de la mejor manera posible. ¡No pararé hasta repetirlo!"</p>
+        </div>
+        <div class="review-card" id="review-3">
+          <div class="review-header">
+            <div class="review-avatar" style="background: linear-gradient(135deg,#10b981,#06b6d4)">AL</div>
+            <div>
+              <div class="review-name">Anna L.</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <div class="review-trip-tag">Cerdeña</div>
+          </div>
+          <p class="review-text">"¡La mejor semana de mi vida! Me sentí segura en todo momento. Conocí personas increíbles y viví momentos que llevaré conmigo para siempre. ¡10/10 volvería sin dudarlo!"</p>
+        </div>
+        <div class="review-card" id="review-4">
+          <div class="review-header">
+            <div class="review-avatar" style="background: linear-gradient(135deg,#8b5cf6,#ec4899)">MP</div>
+            <div>
+              <div class="review-name">Marco P.</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <div class="review-trip-tag">Croacia</div>
+          </div>
+          <p class="review-text">"Alex tenía todo perfectamente planificado y nos dejó tomar decisiones sobre qué hacer. Siempre dispuesto a llevarnos donde queríamos. Se nota que ama lo que hace."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== FAQ =========== -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-container">
+      <div class="section-label">Preguntas Frecuentes</div>
+      <h2 class="section-title">Todo lo que debes <span class="highlight">saber</span></h2>
+      <div class="faq-list">
+        <div class="faq-item" id="faq-1">
+          <button class="faq-question" aria-expanded="false">
+            ¿Necesito experiencia en navegación?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No, en absoluto. Nuestros viajes están diseñados para ser disfrutados por cualquier persona, independientemente de su experiencia. El capitán se encarga de todo. Si quieres aprender a navegar, ¡con mucho gusto te enseñamos!</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-2">
+          <button class="faq-question" aria-expanded="false">
+            ¿Qué incluye el precio del viaje?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>El precio incluye alojamiento en el barco (camarote), gastos del barco (combustible, amarres, tasas), y la guía del capitán. No incluye vuelos, comidas ni actividades opcionales en tierra. Te enviamos una lista completa al reservar.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-3">
+          <button class="faq-question" aria-expanded="false">
+            ¿Cuánta gente irá en el barco?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Trabajamos con grupos de entre 6 y 12 personas. Lo suficiente para crear un ambiente dinámico y divertido, pero lo bastante pequeño para que todo el mundo se conozca de verdad.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-4">
+          <button class="faq-question" aria-expanded="false">
+            ¿Cómo son los alojamientos en el barco?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Los veleros cuentan con camarotes dobles o individuales con camas cómodas, baño a bordo, cocina equipada y amplia zona de cubierta para relajarse. Es una forma de dormir diferente, ¡pero muy especial!</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-5">
+          <button class="faq-question" aria-expanded="false">
+            ¿Cómo reservo mi plaza?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Es muy sencillo: escríbenos por WhatsApp o a través del formulario de contacto, te confirmamos disponibilidad y te enviamos los pasos para completar la reserva con depósito. El resto es todo aventura.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-6">
+          <button class="faq-question" aria-expanded="false">
+            ¿Se puede cancelar la reserva?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sí, disponemos de una política de cancelación flexible. El depósito es reembolsable si cancelas con más de 60 días de antelación. Más información en nuestros Términos y Condiciones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== CONTACT =========== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="section-label">¿Listo para zarpar?</div>
+          <h2 class="section-title">Contáctanos y <span class="highlight">Reserva tu Plaza</span></h2>
+          <p class="contact-desc">Escríbenos con tus fechas preferidas y cualquier pregunta. Respondemos en menos de 24 horas.</p>
+          <div class="contact-methods">
+            <a href="https://wa.me/34600000000" class="contact-method" id="contact-whatsapp">
+              <span class="contact-method-icon">💬</span>
+              <div><strong>WhatsApp</strong><span>Respuesta rápida</span></div>
+            </a>
+            <a href="mailto:hola@groupsailtrips.com" class="contact-method" id="contact-email">
+              <span class="contact-method-icon">✉️</span>
+              <div><strong>Email</strong><span>hola@groupsailtrips.com</span></div>
+            </a>
+            <a href="https://instagram.com" class="contact-method" id="contact-instagram">
+              <span class="contact-method-icon">📸</span>
+              <div><strong>Instagram</strong><span>@groupsailtrips</span></div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="form-name">Nombre</label>
+              <input type="text" id="form-name" name="name" placeholder="Tu nombre completo" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" id="form-email" name="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="form-trip">Viaje de interés</label>
+              <select id="form-trip" name="trip">
+                <option value="">Seleccionar destino...</option>
+                <option value="croatia">Split Happens — Croacia</option>
+                <option value="greece">Grecia con el Grupo</option>
+                <option value="sardinia">Cerdeña Salvaje</option>
+                <option value="other">Otro / Sin decidir</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Mensaje</label>
+              <textarea id="form-message" name="message" placeholder="Cuéntanos sobre ti y tus fechas preferidas..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit">Enviar Mensaje ✈️</button>
+          </form>
+          <div class="form-success" id="form-success" style="display:none">
+            <div class="success-icon">✅</div>
+            <h3>¡Mensaje enviado!</h3>
+            <p>Te respondemos en menos de 24 horas. ¡Prepárate para zarpar!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== NEWSLETTER =========== -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="container newsletter-container">
+      <div class="newsletter-icon">⛵</div>
+      <h2>Suscríbete y Gana un <span class="highlight">Viaje Gratis</span></h2>
+      <p>Únete a nuestra newsletter para recibir novedades, ofertas exclusivas y participar en el sorteo de un viaje en velero.</p>
+      <form class="newsletter-form" id="newsletter-form" onsubmit="handleNewsletter(event)">
+        <input type="email" id="newsletter-email" placeholder="tu@email.com" required />
+        <button type="submit" id="newsletter-submit">Suscribirme</button>
+      </form>
+      <div id="newsletter-success" class="newsletter-success" style="display:none">¡Gracias! Ya estás en la lista. ¡Buena suerte! 🎉</div>
+      <p class="newsletter-legal">Al registrarte, aceptas recibir emails de marketing. Sin spam, prometido.</p>
+    </div>
+  </section>
+
+  <!-- =========== FOOTER =========== -->
+  <footer class="footer" id="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-icon">⛵</span>
+          <span class="logo-text">Group<strong>Sail</strong>Trips</span>
+        </div>
+        <p>Viajes en velero auténticos por el Mediterráneo. Pequeños grupos, grandes aventuras.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com" class="social-link" id="footer-instagram" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/34600000000" class="social-link" id="footer-whatsapp" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Viajes</h4>
+        <ul>
+          <li><a href="#trips">Split, Croacia</a></li>
+          <li><a href="#trips">Atenas, Grecia</a></li>
+          <li><a href="#trips">Cerdeña, Italia</a></li>
+          <li><a href="#calendar">Ver Calendario</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#captain">El Capitán</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 GroupSailTrips — Todos los derechos reservados</span>
+        <span>Hecho con ❤️ y sal marina</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">↑</button>
+  <script src="app.js"></script>
+</body>
+</html>

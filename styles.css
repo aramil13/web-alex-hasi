@@ -469,6 +469,25 @@ ul { list-style: none; }
   margin-bottom: 48px;
 }
 
+.trips-group-title {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 8px 0 4px;
+  color: var(--gold);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.trips-group-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(200,145,62,0.4), transparent);
+}
+
 .trip-card {
   background: var(--ocean-deep);
   border: 1px solid rgba(200,145,62,0.1);

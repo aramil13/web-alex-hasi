@@ -88,7 +88,7 @@ function handleFormSubmit(e) {
   const success = document.getElementById('form-success');
   const btn     = document.getElementById('form-submit');
 
-  btn.textContent = 'Enviando...';
+  btn.textContent = 'Sending...';
   btn.disabled = true;
 
   // Simulate send
@@ -105,7 +105,7 @@ function handleNewsletter(e) {
   const success = document.getElementById('newsletter-success');
   const btn     = document.getElementById('newsletter-submit');
 
-  btn.textContent = 'Suscribiendo...';
+  btn.textContent = 'Subscribing...';
   btn.disabled = true;
 
   setTimeout(() => {

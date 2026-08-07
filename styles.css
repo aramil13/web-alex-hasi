@@ -35,7 +35,7 @@
   --transition:   0.3s cubic-bezier(0.4,0,0.2,1);
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 body {
   font-family: var(--font-main);
@@ -43,6 +43,7 @@ body {
   color: var(--white);
   overflow-x: hidden;
   line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
 }
 
 img { max-width: 100%; display: block; }
@@ -94,6 +95,7 @@ ul { list-style: none; }
   align-items: center;
   gap: 8px;
   padding: 14px 28px;
+  touch-action: manipulation;
   border-radius: 999px;
   font-family: var(--font-main);
   font-size: 0.95rem;
@@ -230,7 +232,9 @@ ul { list-style: none; }
   cursor: pointer;
   background: none;
   border: none;
-  padding: 4px;
+  padding: 10px;
+  margin: -10px;
+  touch-action: manipulation;
 }
 .burger-btn span {
   display: block;
@@ -240,6 +244,9 @@ ul { list-style: none; }
   border-radius: 2px;
   transition: var(--transition);
 }
+.burger-btn.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger-btn.active span:nth-child(2) { opacity: 0; }
+.burger-btn.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* =============================================
    HERO
@@ -247,6 +254,7 @@ ul { list-style: none; }
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -1204,10 +1212,11 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   .nav-links { display: none; position: fixed; top: 0; right: 0; bottom: 0; width: 280px; background: rgba(27,18,10,0.98); backdrop-filter: blur(20px); flex-direction: column; justify-content: center; align-items: flex-start; padding: 80px 32px; gap: 16px; transform: translateX(100%); transition: var(--transition); z-index: 999; border-left: 1px solid rgba(200,145,62,0.2); }
   .nav-links.open { display: flex; transform: translateX(0); }
-  .nav-link { font-size: 1.1rem; color: var(--white); padding: 10px 0; }
+  .nav-link { font-size: 1.1rem; color: var(--white); padding: 10px 0; min-height: 44px; }
   .nav-cta { margin-top: 16px; }
   .burger-btn { display: flex; z-index: 1000; }
 
+  .hero-content { padding: 110px 20px 60px; }
   .hero-stats { gap: 20px; }
   .stat-number { font-size: 1.4rem; }
 
@@ -1217,17 +1226,61 @@ ul { list-style: none; }
   .features-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
 
+  .trip-overlay { opacity: 1; background: rgba(27,18,10,0.15); }
+  .trip-card-img-wrap { height: 200px; }
+  .trip-meta { flex-wrap: wrap; gap: 4px 8px; }
+  .trip-footer { flex-wrap: wrap; gap: 12px; }
+
+  .review-header { flex-wrap: wrap; }
+  .review-trip-tag { margin-left: auto; }
+
+  .captain-img { height: 320px; }
+
+  .gallery-strip { height: 150px; overflow-x: auto; scroll-snap-type: x mandatory; }
+  .gallery-strip img { flex: 0 0 45vw; scroll-snap-align: start; }
+  .gallery-strip img:hover { flex: 0 0 45vw; filter: brightness(0.7) saturate(1.2); }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea,
+  .newsletter-form input { font-size: 16px; }
+
+  .contact-method { min-height: 56px; }
+
   .footer-bottom .container { flex-direction: column; gap: 8px; text-align: center; }
 
   .newsletter-form { flex-direction: column; }
 
-  .gallery-strip { height: 140px; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
 }
 
 @media (max-width: 480px) {
   .features-grid { grid-template-columns: 1fr; }
+  .hero-title { font-size: 1.9rem; }
+  .section-title { font-size: 1.7rem; margin-bottom: 32px; }
   .hero-stats { flex-wrap: wrap; gap: 16px; }
   .hero-stat-divider { display: none; }
+  .hero-scroll-hint { display: none; }
   .contact-form { padding: 24px; }
+  .contact-method { padding: 16px; }
+  .faq-question { font-size: 0.9rem; padding: 18px; }
+  .trip-footer { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .newsletter-form button { width: 100%; }
+  .footer-grid { gap: 40px; }
+  .captain-img { height: 260px; }
+}
+
+@media (hover: none) {
+  .feature-card:hover,
+  .trip-card:hover,
+  .cal-month:hover,
+  .review-card:hover,
+  .contact-method:hover,
+  .btn-primary:hover,
+  .btn-ghost:hover,
+  .btn-outline:hover,
+  .btn-social:hover { transform: none; }
+  .trip-card:hover .trip-card-img { transform: none; }
+  .cal-arrow { opacity: 1; }
+  .trip-overlay { opacity: 1; }
 }

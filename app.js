@@ -137,7 +137,7 @@ const sectionObserver = new IntersectionObserver((entries) => {
         link.style.background = '';
         if (link.getAttribute('href') === `#${entry.target.id}`) {
           link.style.color = 'var(--cyan)';
-          link.style.background = 'rgba(200,145,62,0.1)';
+          link.style.background = 'rgba(212,147,31,0.1)';
         }
       });
     }

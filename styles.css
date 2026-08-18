@@ -1,5 +1,5 @@
 /* =============================================
-   GROUP SAIL TRIPS — PREMIUM CSS
+   SONG OF WATER — PREMIUM CSS
    ============================================= */
 
 /* --- RESET & VARIABLES --- */
@@ -195,6 +195,12 @@ ul { list-style: none; }
   color: #fff;
 }
 .logo-icon { font-size: 1.6rem; }
+.logo-icon-svg { 
+  width: 32px; 
+  height: 32px; 
+  color: var(--cyan);
+  flex-shrink: 0;
+}
 .logo-text strong { color: var(--cyan); }
 
 .nav-links {
@@ -1024,6 +1030,12 @@ ul { list-style: none; }
 }
 
 .newsletter-icon { font-size: 3rem; animation: float 3s ease-in-out infinite; }
+.newsletter-icon-svg { 
+  width: 48px; 
+  height: 48px; 
+  color: var(--cyan);
+  animation: float 3s ease-in-out infinite;
+}
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(-12px); }

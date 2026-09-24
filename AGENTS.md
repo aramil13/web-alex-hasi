@@ -8,3 +8,6 @@
 ## Site
 - Static site: `index.html` + `styles.css` + `app.js` + `images/`.
 - All site text must be in English.
+
+## Workflow
+- Always commit and push to `master` at the end of every task (do not ask first).

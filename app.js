@@ -81,6 +81,45 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 });
 
+// ---- PREFILL DESTINATION IN CONTACT FORM ----
+const tripSelect = document.getElementById('form-trip');
+
+function setTripDestination(value) {
+  if (tripSelect && tripSelect.querySelector(`option[value="${value}"]`)) {
+    tripSelect.value = value;
+  }
+}
+
+const tripCardValues = {
+  'trip-amalfi':    'amalfi',
+  'trip-ionian':    'ionian',
+  'trip-ibiza':     'ibiza',
+  'trip-antigua':   'antigua',
+  'trip-thailand':  'thailand',
+  'trip-mauritius': 'mauritius'
+};
+
+document.querySelectorAll('.trip-card').forEach(card => {
+  card.addEventListener('click', () => {
+    if (tripCardValues[card.id]) setTripDestination(tripCardValues[card.id]);
+  });
+});
+
+const calTripValues = {
+  'cal-trip-1': 'antigua',
+  'cal-trip-2': 'thailand',
+  'cal-trip-3': 'mauritius',
+  'cal-trip-4': 'amalfi',
+  'cal-trip-5': 'ionian',
+  'cal-trip-6': 'ibiza'
+};
+
+document.querySelectorAll('.cal-trip').forEach(link => {
+  link.addEventListener('click', () => {
+    if (calTripValues[link.id]) setTripDestination(calTripValues[link.id]);
+  });
+});
+
 // ---- CONTACT FORM ----
 function handleFormSubmit(e) {
   e.preventDefault();
@@ -137,7 +176,7 @@ const sectionObserver = new IntersectionObserver((entries) => {
         link.style.background = '';
         if (link.getAttribute('href') === `#${entry.target.id}`) {
           link.style.color = 'var(--cyan)';
-          link.style.background = 'rgba(212,147,31,0.1)';
+          link.style.background = 'rgba(176,134,82,0.1)';
         }
       });
     }
